@@ -1,0 +1,28 @@
+﻿@model InstituicaoDeEnsinoSuperior.Modelo.Cadastros.Instituicao
+
+@{
+    Layout = "_LayoutIES";
+}
+
+@section styles {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+}
+
+<body class="skin-black">
+    <header class="header">
+        <h1 class="mt-4 text-center"> Excluindo uma instituição</h1>
+        <br />
+        @{ await Html.RenderPartialAsync("~/Areas/Cadastros/Views/Instituicao/_PartialDetailsContentCard.cshtml", Model);}
+        <br />
+        <div class="card-footer bg-info text-center text-white">
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="InstituicaoID" />
+                <input type="submit" value="Remover Instituição" class="btn btn-default" />
+                <a asp-action="Index" class="btn btn-info">
+                    Retornar à listagem de instituições
+                </a>
+            </form>
+        </div>
+    </header>
+</body>
+

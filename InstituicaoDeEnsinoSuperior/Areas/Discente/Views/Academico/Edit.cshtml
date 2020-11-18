@@ -1,0 +1,69 @@
+﻿@model Modelo.Discente.Academico
+
+@{
+    Layout = "_LayoutIES";
+}
+
+<body class="skin-black">
+    <header class="header">
+        <h1 class="mt-4 text-center"> Alterando um acadêmico</h1>
+        <br />
+        <aside class="right-side">
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="box-body">
+                            <div class="form-group">
+                                <form enctype="multipart/form-data" asp-action="Edit">
+                                    <input type="hidden" asp-for="AcademicoID" />
+                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                    <div class="form-group">
+                                        <label asp-for="RegistroAcademico" class="control-label">Ristro Acadêmico:</label>
+                                        <input asp-for="RegistroAcademico" class="form-control" placeholder="Registro Acadêmico" />
+                                        <span asp-validation-for="RegistroAcademico" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Nome" class="control-label">Nome:</label>
+                                        <input asp-for="Nome" class="form-control" placeholder="Nome completo" />
+                                        <span asp-validation-for="Nome" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Nascimento" class="control-label">Data de Nascimento:</label>
+                                        <input asp-for="Nascimento" class="form-control" />
+                                        <span asp-validation-for="Nascimento" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Foto</label>
+                                        <input type="file" name="foto" class="form-control" />
+                                    </div>
+                                    <br />
+                                    <div class="form-group text-center h3">
+                                        <input type="submit" value="Atualizar Acadêmico" class="btn btn-light" />
+                                        <a asp-action="Index" class="btn btn-info">Retornar à listagem de acadêmicos</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-dark text-center text-white">
+                            Informe os dados acima e/ou clique em um dos botões de ação
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img class="img-thumbnail" src="@Url.Action("GetFoto", "Academico",	new	{ id = Model.AcademicoID })"
+                             style="display:block; margin-left:auto; margin-right:auto;" />
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="chkRemoverFoto" value="Sim"> Remover Foto
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </header>
+</body>
+
+
+@section ScriptPage {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

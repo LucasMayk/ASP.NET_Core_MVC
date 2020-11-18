@@ -1,0 +1,88 @@
+﻿@model IEnumerable<InstituicaoDeEnsinoSuperior.Modelo.Cadastros.Instituicao>
+
+@{
+    Layout = "_LayoutIES";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/lib/datatables/css/jquery.dataTables.min.css" />
+}
+
+@if (@TempData["Message"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["Message"]
+    </div>
+}
+
+<body class="sb-nav-fixed">
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid">
+                <h1 class="mt-4">Instituições Registradas</h1>
+                <br />
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="box-body table-responsive">
+                            <table class="table table-bordered" id="tabela_instituicoes" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.InstituicaoID)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Nome)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Endereco)
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.InstituicaoID)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Nome)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Endereco)
+                                            </td>
+                                            <td>
+                                                <a asp-action="Edit" asp-route-id="@item.InstituicaoID">Edit</a> |
+                                                <a asp-action="Details" asp-route-id="@item.InstituicaoID">Detail</a> |
+                                                <a asp-action="Delete" asp-route-id="@item.InstituicaoID">Delete</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <br />
+                        <div class="box-footer">
+                            <a asp-action="Create" class="btn btn-info">Criar uma nova instituição</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+@section ScriptPage {
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#tabela_instituicoes').DataTable({
+                "order": [[1, "asc"]]
+            });
+        });
+    </script>
+}
+
+

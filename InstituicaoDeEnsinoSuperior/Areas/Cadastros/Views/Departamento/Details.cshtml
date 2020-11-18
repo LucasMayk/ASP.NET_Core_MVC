@@ -1,0 +1,26 @@
+﻿@model InstituicaoDeEnsinoSuperior.Modelo.Cadastros.Departamento
+
+@{
+    Layout = "_LayoutIES";
+}
+
+@section styles {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+}
+
+<body class="skin-black">
+    <header class="header">
+        <h1 class="mt-4 text-center"> Exibindo um departamento existente</h1>
+        <br />
+        @{ await Html.RenderPartialAsync("~/Areas/Cadastros/Views/Departamento/_PartialDetailsContentCard.cshtml", Model);}
+        <br />
+        <div class="card-footer bg-info text-center">
+            <a asp-action="Edit" class="btn btn-default" asp-route-id="@Model.DepartamentoID">
+                Alterar
+            </a>
+            <a asp-action="Index" class="btn btn-info">
+                Retornar à listagem de departamentos
+            </a>
+        </div>
+    </header>
+</body>

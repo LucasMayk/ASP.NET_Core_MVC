@@ -1,0 +1,41 @@
+﻿@model IEnumerable<InstituicaoDeEnsinoSuperior.Modelo.Cadastros.Departamento>
+
+
+<body class="skin-black">
+    <header class="header">
+        <div class="card-header text-white bg-warning text-center">Departamento Registrado na Instituição</div>
+        <aside class="right-side">
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="box-body">
+                            <div class="form-group">
+                                <div class="card-body">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.Instituicao.Nome)
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.Nome)
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </header>
+</body>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "+lUMm9obhnslx2ZrolWKNaGSnwa6fLzARgionWS3vyd8nM/YqKVIZKJNqFjGg72LKn0QyqCNyjPMUc7x9uiIFA==",
+  "success": true,
+  "projectFilePath": "C:\\ProjetosCSharp\\InstituicaoDeEnsinoSuperior\\Modelos\\Modelos.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Programador\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.0\\microsoft.aspnetcore.http.features.5.0.0.nupkg.sha512",
+    "C:\\Users\\Programador\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\Programador\\.nuget\\packages\\system.io.pipelines\\5.0.0\\system.io.pipelines.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

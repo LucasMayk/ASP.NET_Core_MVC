@@ -1,0 +1,9 @@
+C:\ProjetosCSharp\InstituicaoDeEnsinoSuperior\Modelos\bin\Debug\netcoreapp3.1\Modelos.deps.json
+C:\ProjetosCSharp\InstituicaoDeEnsinoSuperior\Modelos\bin\Debug\netcoreapp3.1\Modelos.dll
+C:\ProjetosCSharp\InstituicaoDeEnsinoSuperior\Modelos\bin\Debug\netcoreapp3.1\Modelos.pdb
+C:\ProjetosCSharp\InstituicaoDeEnsinoSuperior\Modelos\obj\Debug\netcoreapp3.1\Modelos.AssemblyInfoInputs.cache
+C:\ProjetosCSharp\InstituicaoDeEnsinoSuperior\Modelos\obj\Debug\netcoreapp3.1\Modelos.AssemblyInfo.cs
+C:\ProjetosCSharp\InstituicaoDeEnsinoSuperior\Modelos\obj\Debug\netcoreapp3.1\Modelos.csproj.CoreCompileInputs.cache
+C:\ProjetosCSharp\InstituicaoDeEnsinoSuperior\Modelos\obj\Debug\netcoreapp3.1\Modelos.dll
+C:\ProjetosCSharp\InstituicaoDeEnsinoSuperior\Modelos\obj\Debug\netcoreapp3.1\Modelos.pdb
+C:\ProjetosCSharp\InstituicaoDeEnsinoSuperior\Modelos\obj\Debug\netcoreapp3.1\Modelos.csprojAssemblyReference.cache
