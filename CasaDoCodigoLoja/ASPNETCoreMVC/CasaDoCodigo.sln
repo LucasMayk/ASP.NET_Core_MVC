@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aulas", "Aulas", "{6474456B-3094-4366-B537-73466B93B359}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP.NET Core MVC", "ASP.NET Core MVC", "{4631F2C0-C039-4806-B924-40ED10895E49}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasaDoCodigo", "Aulas\Aula5\antes\CasaDoCodigo\CasaDoCodigo.csproj", "{7809EE82-C64E-49F0-89CD-9C3D6AB0E035}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7809EE82-C64E-49F0-89CD-9C3D6AB0E035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7809EE82-C64E-49F0-89CD-9C3D6AB0E035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7809EE82-C64E-49F0-89CD-9C3D6AB0E035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7809EE82-C64E-49F0-89CD-9C3D6AB0E035}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4631F2C0-C039-4806-B924-40ED10895E49} = {6474456B-3094-4366-B537-73466B93B359}
+		{7809EE82-C64E-49F0-89CD-9C3D6AB0E035} = {4631F2C0-C039-4806-B924-40ED10895E49}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FED210B-3460-45CF-9C4D-877F0D63546F}
+	EndGlobalSection
+EndGlobal
